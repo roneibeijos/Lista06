@@ -1,0 +1,49 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  Armazenar dois valores e através de um procedimento fazer a troca desses valores entre as variáveis.
+//  Entrada : Dois valores
+//  Saída   : Dois valores com a posição trocada
+
+
+principal
+	texto nome;
+	inteiro idade;
+	caracter sexo;
+	escreval("NOME: ",perguntaNome(nome)," IDADE: ",	perguntaIdade(idade)," ANOS"," SEXO: ",perguntaSexo(sexo));
+fimPrincipal
+funcao texto perguntaNome(texto nome)
+	faca
+		escreval("Digite o nome da pessoa: ");
+		leia(nome);
+	enquanto(tamanhoTexto(nome)==0);
+	retorna nome;
+fimFuncao
+funcao inteiro  perguntaIdade(inteiro idade)
+	faca
+		escreval("Digite a idade da pessoa: ");
+		leia(idade);
+		se(idade<0)entao
+			escreval("ERRO!, DIGITE UM VALOR POSITIVO.");
+		fimSe
+	enquanto(idade<0);
+	retorna idade;
+fimFuncao
+funcao texto perguntaSexo(caracter sexo)
+	texto class;
+	faca
+		escreval("Digite o sexo da pessoa F para feminino e M para masculino: ");
+		leiaCaracter(sexo);
+		se(sexo=='f' ou sexo=='F')entao
+			class="FEMININO";
+		senao
+			se(sexo=='m' ou sexo=='M')entao
+				class="MASCULINO";
+			fimSe
+		fimSe
+	enquanto(sexo!='f' e sexo!='F' e sexo!='m' e sexo!='M');
+	retorna class;
+fimFuncao
+
+
+
+

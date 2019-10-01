@@ -1,0 +1,25 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  Armazenar dois valores e através de um procedimento fazer a troca desses valores entre as variáveis.
+//  Entrada : Dois valores
+//  Saída   : Dois valores com a posição trocada
+
+
+principal
+
+	inteiro valor1,valor2;
+
+	escreval("Digite o primeiro valor: ");
+	leia(valor1);
+	escreval("Digite o segundo valor: ");
+	leia(valor2);
+	escreval(valor1,valor2);
+	realizaTroca(valor1,valor2);
+	escreval(valor1,valor2);
+fimPrincipal
+procedimento realizaTroca( ref inteiro x, ref inteiro y)
+	inteiro j;
+	j=x;
+	x=y;
+	y=j;
+fimProcedimento

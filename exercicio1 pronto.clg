@@ -1,0 +1,22 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  Calcular o valor da hipotenusa de um triangulo
+//  Entrada : cateto a e b
+//  Saída   : Valor da hipotenusa
+
+
+principal
+	inteiro a,b;
+	real hip;
+	
+	escreval("Digite o valor do cateto A: ");
+	leia(a);
+	escreval("Digite o valor do cateto B: ");
+	leia(b);	
+	escreval("O valor da hipotenusa é: ", calculaHip(a,b));
+fimPrincipal
+funcao real calculaHip(inteiro a, inteiro b)
+	real hip;
+	hip=raizQuadrada(exp(a,2)+exp(b,2));
+	retorna hip;
+fimFuncao

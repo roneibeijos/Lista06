@@ -1,0 +1,18 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  Converter temperatura de graus celsius para farenheit
+//  Entrada : Temperatura em graus celsius
+//  Saída   : Temperatura em farenheit
+
+principal
+	real C;
+	escreval("Digite a temperatura em graus celsius: ");
+	leia(C);
+	limpaTela();
+	escreval("A temperatura em farenheit é: ", converteFaren(C));
+fimPrincipal
+funcao real converteFaren(real C)
+	real F;
+	F=C*(9.0/5.0)+32.0;
+	retorna F;
+fimFuncao
