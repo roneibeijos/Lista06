@@ -20,3 +20,5 @@ funcao real calculaHip(inteiro a, inteiro b)
 	hip=raizQuadrada(exp(a,2)+exp(b,2));
 	retorna hip;
 fimFuncao
+
+// teste de mudança
