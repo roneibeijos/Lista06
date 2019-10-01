@@ -16,3 +16,4 @@ funcao real converteFaren(real C)
 	F=C*(9.0/5.0)+32.0;
 	retorna F;
 fimFuncao
+//teste 1232323
